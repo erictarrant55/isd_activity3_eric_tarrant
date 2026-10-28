@@ -1,10 +1,9 @@
 """Defines the VendingMachine class."""
 
-from vending_machine.vending_machine_state import VendingMachineState
-from .has_payment_state import HasPaymentState
-from .no_payment_state import NoPaymentState
-from .out_of_stock_state import OutOfStockState
-from .state import State
+from vending_machine.has_payment_state import HasPaymentState
+from vending_machine.no_payment_state import NoPaymentState
+from vending_machine.out_of_stock_state import OutOfStockState
+from vending_machine.state import State
 
 __author__ = "COMP-2327 Faculty"
 __version__ = "1.0.0"
@@ -19,13 +18,13 @@ class VendingMachine:
         self.state = NoPaymentState()
 
     @property
-    def state(self) -> VendingMachineState:
+    def state(self) -> State:
         """Returns the current state of the vending machine."""
 
         return self.__state
 
     @state.setter
-    def state(self, state: VendingMachineState) -> None:
+    def state(self, state: State) -> None:
         """Sets the state of the vending machine."""
 
         self.__state = state

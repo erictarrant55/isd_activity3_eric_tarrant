@@ -2,7 +2,7 @@
 __author__ = "Eric Tarrant"
 __version__ = "1.0.0"
 
-from .state import State
+from vending_machine.state import State
 
 class HasPaymentState(State):
     """

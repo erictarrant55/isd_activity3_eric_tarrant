@@ -2,7 +2,7 @@
 
 A common interface for all vending machine states.
 """
-from vending_machine import VendingMachine
+from vending_machine.vending_machine import VendingMachine
 from abc import ABC, abstractmethod
 
 __author__ = "Eric Tarrant"
