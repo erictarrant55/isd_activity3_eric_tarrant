@@ -1,10 +1,10 @@
 """Defines the VendingMachine class."""
 
 from vending_machine.vending_machine_state import VendingMachineState
-from has_payment_state import HasPaymentState
-from no_payment_state import NoPaymentState
-from out_of_stock_state import OutOfStockState
-from state import State
+from .has_payment_state import HasPaymentState
+from .no_payment_state import NoPaymentState
+from .out_of_stock_state import OutOfStockState
+from .state import State
 
 __author__ = "COMP-2327 Faculty"
 __version__ = "1.0.0"
